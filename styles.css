@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura vertical */
+  }
+  
+  .album {
+    max-width: 100%; /* Asegura que el álbum ocupe todo el ancho posible */
+  }
+  
+  .navegacion {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna en dispositivos pequeños */
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flecha-izquierda,
+  .flecha-derecha {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Espacio entre flechas */
+  }
+  
+  .flecha-izquierda:hover,
+  .flecha-derecha:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .foto-container {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #foto {
+    max-width: 100%;
+    max-height: 80vh; /* Limitar la altura de la imagen para evitar recortes */
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .navegacion {
+      flex-direction: row; /* Cambiar a fila en pantallas más grandes */
+      justify-content: space-between; /* Espacio entre flechas en pantallas grandes */
+      padding: 10px;
+    }
+  
+    .flecha-izquierda,
+    .flecha-derecha {
+      margin: 0 10px; /* Espacio entre flechas ajustado */
+    }
+  }
+  

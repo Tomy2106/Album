@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum de Fotos con Música</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="album">
+    <div class="foto-container">
+      <img id="foto" src="images/1.png" alt="Foto">
+    </div>
+    <div class="navegacion">
+      <button id="anterior" class="flecha-izquierda">◄</button>
+      <audio id="musica" autoplay loop>
+        <source src="musica.mp3" type="audio/mpeg">
+        <!-- Reemplaza "tu-cancion.mp3" con el nombre de tu archivo de música -->
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      <button id="siguiente" class="flecha-derecha">►</button>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
